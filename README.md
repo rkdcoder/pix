@@ -32,7 +32,7 @@
 
 ## Visão Geral
 
-O **Pix** é um pacote Nuget para geração do payload textual do Pix (“Copia e Cola”), seguindo o padrão do Banco Central do Brasil. Desenvolvido para ser simples, validado, direto, e seguro.
+O **Rkd.Pix** é um pacote Nuget para geração do payload textual do Pix (“Copia e Cola”), seguindo o padrão do Banco Central do Brasil. Desenvolvido para ser simples, validado, direto, e seguro.
 
 - Compatível com .NET 6 ou superior.
 - Gera somente o texto do payload Pix, pronto para colar no app do banco ou gerar QR Code.
@@ -47,13 +47,13 @@ O **Pix** é um pacote Nuget para geração do payload textual do Pix (“Copia 
 Via Nuget Package Manager:
 
 ```
-Install-Package Pix
+Install-Package Rkd.Pix
 ```
 
 Ou via .NET CLI:
 
 ```
-dotnet add package Pix
+dotnet add package Rkd.Pix
 ```
 
 ---
