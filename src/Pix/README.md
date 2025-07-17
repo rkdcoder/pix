@@ -1,6 +1,6 @@
 # Pix – Geração de Payload Copia e Cola para Pix (.NET 6+)
 
-![NuGet](https://img.shields.io/nuget/v/Pix)
+![NuGet](https://img.shields.io/nuget/v/Pix.Rkd)
 
 Gere facilmente o payload Pix (“Copia e Cola”) pronto para uso em pagamentos instantâneos, com validação automática dos dados e API simples. Não gera imagens QR Code – apenas o texto do Pix, conforme padrão Bacen.
 
