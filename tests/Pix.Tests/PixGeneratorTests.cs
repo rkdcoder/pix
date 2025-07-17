@@ -62,17 +62,17 @@
         }
 
         [Fact]
-        public void Deve_Falhar_Quando_TxId_Com_Caracteres_Invalidos()
+        public void Deve_Falhar_Quando_TxId_Com_Apenas_Caracteres_Invalidos()
         {
             var result = PixGenerator.GeneratePayload(
                 "abc@pix.com.br",
                 "JOSE DA SILVA",
                 10.50m,
                 "CURITIBA",
-                "TX!@#"
+                "!@#"
             );
             Assert.False(result.Success);
-            Assert.Contains("identificador", result.Message!, System.StringComparison.OrdinalIgnoreCase);
+            Assert.Contains("identificador", result.Message!, StringComparison.OrdinalIgnoreCase);
         }
 
         [Fact]
@@ -137,7 +137,7 @@
             );
             Assert.True(result.Success);
             Assert.NotNull(result.Payload);
-            Assert.Contains("Pagamento de serviço", result.Payload!);
+            Assert.Contains("PAGAMENTO DE SERVICO", result.Payload!);
         }
 
         [Fact]

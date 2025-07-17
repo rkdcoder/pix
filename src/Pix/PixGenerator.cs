@@ -33,25 +33,33 @@ namespace Pix
         {
             try
             {
+                var chavePixNorm = chavePix.Trim(); // email, aleatória, telefone, CPF/CNPJ
+                var nomeNorm = PixStringNormalizer.Normalize(nomeFavorecido);
+                var cidadeNorm = PixStringNormalizer.Normalize(cidade);
+                var identificadorNorm = PixStringNormalizer.Normalize(identificador);
+                var mensagemNorm = mensagem != null ? PixStringNormalizer.Normalize(mensagem) : null;
+                var moedaNorm = moeda.Trim();
+                var paisNorm = PixStringNormalizer.Normalize(pais);
+
                 PixPayloadValidator.Validate(
-                    chavePix,
-                    nomeFavorecido,
+                    chavePixNorm,
+                    nomeNorm,
                     valor,
-                    cidade,
-                    identificador,
-                    mensagem,
-                    moeda,
-                    pais);
+                    cidadeNorm,
+                    identificadorNorm,
+                    mensagemNorm,
+                    moedaNorm,
+                    paisNorm);
 
                 var payload = BuildPayloadString(
-                    chavePix,
-                    nomeFavorecido,
+                    chavePixNorm,
+                    nomeNorm,
                     valor,
-                    cidade,
-                    identificador,
-                    mensagem,
-                    moeda,
-                    pais);
+                    cidadeNorm,
+                    identificadorNorm,
+                    mensagemNorm,
+                    moedaNorm,
+                    paisNorm);
 
                 return new PixPayloadResult
                 {
