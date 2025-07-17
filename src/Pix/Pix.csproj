@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <PackageId>Pix</PackageId>
+    <Version>1.0.3</Version>
+    <Authors>Rodrigo Kmiecik</Authors>
+    <Company>rkd.com.br</Company>
+    <Product>Pix Nuget</Product>
+    <PackageDescription>Gerador de payload Pix Copia e Cola, validado e seguro, com API fluente e validação Bacen. Não gera imagem QR Code, apenas o texto do Pix.</PackageDescription>
+    <Description>Pix: Geração de payload Pix “Copia e Cola” em .NET, com validação rigorosa e respostas padronizadas. Compatível com .NET 6+. Pronto para integração e extensibilidade.</Description>
+    <RepositoryUrl>https://github.com/rkdcoder/pix</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/rkdcoder/pix</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageTags>pix;pagamento;qr-code;nuget;dotnet;copy-paste;bacen;copiacola;validação;fluent;payload</PackageTags>
+    <Title>Pix</Title>
+    <Summary>Gere payloads Pix Copia e Cola validados, com API fluente para .NET</Summary>
+    <ReadMe>README.md</ReadMe>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="" />
+    <None Include="README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+  
+</Project>
