@@ -83,24 +83,26 @@ namespace Pix
         {
             var cultureInfo = CultureInfo.InvariantCulture;
             string valorFormatado = valor.ToString("0.00", cultureInfo);
-            string bancoCentralGUI = "0014br.gov.bcb.pix";
 
             var sb = new StringBuilder();
 
             sb.Append("000201");
-            sb.Append("26");
-            sb.Append("01" + nomeFavorecido.Length.ToString("D2") + chavePix + bancoCentralGUI + mensagem).Length.ToString("D2");
-            sb.Append(bancoCentralGUI);
-            sb.Append("01");
-            sb.Append(chavePix.Length.ToString("D2"));
-            sb.Append(chavePix);
 
+            var merchantAccountInfo = new StringBuilder();
+            merchantAccountInfo.Append("0014br.gov.bcb.pix");
+            merchantAccountInfo.Append("01");
+            merchantAccountInfo.Append(chavePix.Length.ToString("D2"));
+            merchantAccountInfo.Append(chavePix);
             if (!string.IsNullOrEmpty(mensagem))
             {
-                sb.Append("02");
-                sb.Append(mensagem.Length.ToString("D2"));
-                sb.Append(mensagem);
+                merchantAccountInfo.Append("02");
+                merchantAccountInfo.Append(mensagem.Length.ToString("D2"));
+                merchantAccountInfo.Append(mensagem);
             }
+            string merchantAccountInfoStr = merchantAccountInfo.ToString();
+            sb.Append("26");
+            sb.Append(merchantAccountInfoStr.Length.ToString("D2"));
+            sb.Append(merchantAccountInfoStr);
 
             sb.Append("52040000");
             sb.Append("5303");
