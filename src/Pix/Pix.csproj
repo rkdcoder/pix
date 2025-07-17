@@ -5,7 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
 
-    <PackageId>Pix.Rkd</PackageId>
+    <PackageId>Rkd.Pix</PackageId>
     <Version>1.0.0</Version>
     <Authors>Rodrigo Kmiecik</Authors>
     <Company>rkd.com.br</Company>
@@ -17,7 +17,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageIcon>icon.png</PackageIcon>
     <PackageTags>pix;pagamento;qr-code;nuget;dotnet;copy-paste;bacen;copiacola;validação;fluent;payload</PackageTags>
-    <Title>Pix.Rkd</Title>
+    <Title>Rkd.Pix</Title>
     <Summary>Gere payloads Pix Copia e Cola validados, com API fluente para .NET</Summary>
     <ReadMe>README.md</ReadMe>
   </PropertyGroup>
