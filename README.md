@@ -1,8 +1,14 @@
 # Pix
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/rkdcoder/pix/main/src/Pix/icon.png" width="128" alt="Pix logo" />
+</p>
+
 ## Pix Nuget: Gerador de Payload para QrCode Pix (Copia e Cola) – .NET 6+
 
-[![Nuget](https://img.shields.io/nuget/v/Pix)](https://www.nuget.org/packages/Pix)
+[![NuGet](https://img.shields.io/nuget/v/Pix.svg)](https://www.nuget.org/packages/Pix)
+[![Build & Publish](https://github.com/rkdcoder/Pix/actions/workflows/main.yml/badge.svg)](https://github.com/rkdcoder/Pix/actions/workflows/main.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 > **Gere payloads Pix “Copia e Cola” de forma segura, validada e simples em aplicações .NET. Não gera imagens, apenas o texto pronto para pagamento!**
 
