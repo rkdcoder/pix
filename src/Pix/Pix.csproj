@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
 
     <PackageId>Pix</PackageId>
-    <Version>1.0.4</Version>
+    <Version>1.0.5</Version>
     <Authors>Rodrigo Kmiecik</Authors>
     <Company>rkd.com.br</Company>
     <Product>Pix Nuget</Product>
