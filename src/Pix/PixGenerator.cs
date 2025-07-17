@@ -1,4 +1,5 @@
 ﻿using System.Globalization;
+using System.Reflection;
 using System.Text;
 
 namespace Pix
@@ -82,13 +83,14 @@ namespace Pix
         {
             var cultureInfo = CultureInfo.InvariantCulture;
             string valorFormatado = valor.ToString("0.00", cultureInfo);
+            string bancoCentralGUI = "0014br.gov.bcb.pix";
 
             var sb = new StringBuilder();
 
             sb.Append("000201");
             sb.Append("26");
-            sb.Append((15 + chavePix.Length + (mensagem != null ? (4 + mensagem.Length) : 0)).ToString("D2"));
-            sb.Append("0014br.gov.bcb.pix");
+            sb.Append("01" + nomeFavorecido.Length.ToString("D2") + chavePix + bancoCentralGUI + mensagem).Length.ToString("D2");
+            sb.Append(bancoCentralGUI);
             sb.Append("01");
             sb.Append(chavePix.Length.ToString("D2"));
             sb.Append(chavePix);
